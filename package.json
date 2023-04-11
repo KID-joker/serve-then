@@ -1,7 +1,7 @@
 {
   "name": "serve-then",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.0-rc.0",
   "description": "After the server starts successfully, then you can ...",
   "author": "KID-joker <kid_joker@126.com>",
   "license": "MIT",
@@ -27,28 +27,17 @@
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/*",
-        "./dist/index.d.ts"
-      ]
-    }
-  },
   "files": [
     "dist"
   ],
   "scripts": {
     "build": "unbuild",
-    "dev": "unbuild --stub",
-    "lint": "eslint .",
-    "prepublishOnly": "nr build",
+    "lint": "eslint . --fix",
     "release": "bumpp && npm publish",
-    "start": "esno src/index.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "wait-on": "^7.0.1"
+    "@kid-joker/live-server": "^1.0.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.35.1",
