@@ -36,5 +36,9 @@ export const serve = function (options?: StartOptions): Promise<string> {
     })
 
     server.unref()
+
+    process.on('exit', () => {
+      server.kill()
+    })
   })
 }

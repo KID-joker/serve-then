@@ -1,8 +1,8 @@
-import { prependShutdown, start } from './server'
+import { start } from './server'
 import type { Message, StartOptions } from './types'
 
 const startServer = async function (options: StartOptions) {
-  const { server, serverURL } = await start(options)
+  const serverURL = await start(options)
 
   if (process.send) {
     process.send({
@@ -10,8 +10,6 @@ const startServer = async function (options: StartOptions) {
       data: serverURL,
     })
   }
-
-  prependShutdown(server, process.ppid)
 }
 
 process.on('message', (message: Message) => {
