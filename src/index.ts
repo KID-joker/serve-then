@@ -1,12 +1,13 @@
 import { fork } from 'child_process'
 import path from 'path'
 import { fileURLToPath } from 'url'
-import type { Message, StartOptions } from './types'
+import type { LiveServerParams as serveOptions } from '@kid-joker/live-server'
+import type { Message } from './types'
 import { getDirname } from './util'
 
-export type { StartOptions }
+export type { serveOptions }
 
-export const serve = function (options?: StartOptions): Promise<string> {
+export const serve = function (options?: serveOptions): Promise<string> {
   return new Promise((resolve) => {
     const dirname = getDirname(import.meta.url)
     const serverPath = path.resolve(dirname, '.', `child_process${path.extname(fileURLToPath(import.meta.url))}`)

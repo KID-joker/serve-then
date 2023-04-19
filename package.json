@@ -1,7 +1,7 @@
 {
   "name": "serve-then",
   "type": "module",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0-rc.2",
   "description": "After the server starts successfully, then you can ...",
   "author": "KID-joker <kid_joker@126.com>",
   "license": "MIT",
@@ -44,7 +44,6 @@
     "@types/node": "^18.11.19",
     "bumpp": "^8.2.1",
     "eslint": "^8.33.0",
-    "esno": "^0.16.3",
     "typescript": "^4.9.5",
     "unbuild": "^1.1.1"
   }
