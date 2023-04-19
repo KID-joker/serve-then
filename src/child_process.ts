@@ -1,9 +1,12 @@
 import type { LiveServerParams as serveOptions } from '@kid-joker/live-server'
-import { start } from './server'
+import liveServer from '@kid-joker/live-server'
 import type { Message } from './types'
 
 const startServer = async function (options: serveOptions) {
-  const serverURL = await start(options)
+  const server = await liveServer.start(options)
+
+  const addressInfo = server.address()
+  const serverURL = `http://${addressInfo.address === '0.0.0.0' ? '127.0.0.1' : addressInfo.address}:${addressInfo.port}`
 
   if (process.send) {
     process.send({
