@@ -1,7 +1,7 @@
 {
   "name": "serve-then",
   "type": "module",
-  "version": "1.0.0-rc.2",
+  "version": "1.0.0",
   "description": "After the server starts successfully, then you can ...",
   "author": "KID-joker <kid_joker@126.com>",
   "license": "MIT",
@@ -37,7 +37,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@kid-joker/live-server": "^1.0.1"
+    "@kid-joker/live-server": "^1.0.2"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.35.1",

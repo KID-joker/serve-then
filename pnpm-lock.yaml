@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@antfu/eslint-config': ^0.35.1
-  '@kid-joker/live-server': ^1.0.1
+  '@kid-joker/live-server': ^1.0.2
   '@types/node': ^18.11.19
   bumpp: ^8.2.1
   eslint: ^8.33.0
@@ -10,7 +10,7 @@ specifiers:
   unbuild: ^1.1.1
 
 dependencies:
-  '@kid-joker/live-server': 1.0.1
+  '@kid-joker/live-server': 1.0.2
 
 devDependencies:
   '@antfu/eslint-config': 0.35.3_ze6bmax3gcsfve3yrzu6npguhe
@@ -625,8 +625,8 @@ packages:
       type-detect: 4.0.8
     dev: true
 
-  /@kid-joker/live-server/1.0.1:
-    resolution: {integrity: sha512-WXtRjsn72voVfRjTodgt7fIrgUE7KXtcL3DnufNEnsEdMjRDKGPTmmWvMCxdlW68Vawnbd8b2IvUtCQddUzUIA==}
+  /@kid-joker/live-server/1.0.2:
+    resolution: {integrity: sha512-zdF4aAd8I4gPBjwt8PNoMjTV7crlBB8uS6Gc7LOiIhD7+fdFOtDwQC+RrCv9BViwcL6ErcUnCHzEQoZ691KoYQ==}
     engines: {node: '>=0.10.0'}
     hasBin: true
     dependencies:
